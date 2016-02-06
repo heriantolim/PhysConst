@@ -1,5 +1,5 @@
 function [v,u]=Loschmidt()
 
-[v,u]=Constant.(UnitSystem).LoschmidtConstant;
+[v,u]=Constant.(UnitSystem()).LoschmidtConstant;
 
 end

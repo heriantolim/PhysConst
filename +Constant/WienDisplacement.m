@@ -1,5 +1,5 @@
 function [v,u]=WienDisplacement()
 
-[v,u]=Constant.(UnitSystem).WienDisplacement;
+[v,u]=Constant.(UnitSystem()).WienDisplacement;
 
 end

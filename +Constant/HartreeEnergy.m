@@ -1,5 +1,5 @@
 function [v,u]=HartreeEnergy()
 
-[v,u]=Constant.(UnitSystem).HartreeEnergy;
+[v,u]=Constant.(UnitSystem()).HartreeEnergy;
 
 end

@@ -1,5 +1,5 @@
 function [v,u]=ElectronMass()
 
-[v,u]=Constant.(UnitSystem).ElectronMass;
+[v,u]=Constant.(UnitSystem()).ElectronMass;
 
 end

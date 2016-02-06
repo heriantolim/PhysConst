@@ -1,5 +1,5 @@
 function [v,u]=VacuumPermittivity()
 
-[v,u]=Constant.(UnitSystem).VacuumPermittivity;
+[v,u]=Constant.(UnitSystem()).VacuumPermittivity;
 
 end
