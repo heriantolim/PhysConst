@@ -2,18 +2,20 @@
 A collection of fundamental physical constants in various unit systems for MATLAB.
 
 ### Syntax:
-`Constant.NameOfConstant` returns the value of the named constant in a predefined unit system. See the list of physical constant names below. For examples:
-- `Constant.ElementaryCharge` returns the value of the elementary charge, *e*;
-- `Constant.LightSpeed` returns the value of the speed of light, *c*.
+`v=Constant.NameOfConstant` returns the value of the named constant in a predefined unit system. See the list of physical constant names below. For examples:
+- `v=Constant.ElementaryCharge` returns the value of the elementary charge, *e*;
+- `v=Constant.LightSpeed` returns the value of the speed of light, *c*.
 
 By default, the values are returned in the [SI](https://en.wikipedia.org/wiki/International_System_of_Units) units. To 'pre-define' a different unit system, do one of the following:
 - Make an assignment: `UnitSystem='UnitSystemCode';`, where `UnitSystemCode` refers to the unit system to be used. See the list of unit system codes below.
 - Define an anonymous function: `UnitSystem=@()'UnitSystemCode';`.
 - Create a function named `UnitSystem` in the current working directory or elsewhere. The function takes no input arguments and return a string specifying the unit system code.
 
-`Constant.UnitSystemCode.NameOfConstant` returns the value of the named constant in the specified unit system, regardless of the predefined unit system. For examples:
-- `Constant.SI.ElementaryCharge` returns the value of the elementary charge, *e*, in the SI units (=1.602176565);
-- `Constant.P.LightSpeed` returns the value of the speed of light, *c*, in the Planck units (=1).
+`v=Constant.UnitSystemCode.NameOfConstant` returns the value of the named constant in the specified unit system, regardless of the predefined unit system. For examples:
+- `v=Constant.SI.ElementaryCharge` returns the value of the elementary charge, *e*, in the SI units (=1.602176565);
+- `v=Constant.P.LightSpeed` returns the value of the speed of light, *c*, in the Planck units (=1).
+
+`[v,u]=Constant.NameOfConstant` and `[v,u]=Constant.UnitSystemCode.NameOfConstant` additionally return the uncertainty of the named constant.
 
 ### List of Unit System Codes
 - `HA`: Hartree Atomic Units
