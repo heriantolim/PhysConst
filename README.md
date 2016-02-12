@@ -7,9 +7,9 @@ A collection of fundamental physical constants in various unit systems for MATLA
 - `v=Constant.LightSpeed` returns the value of the speed of light, *c*.
 
 By default, the values are returned in the [SI](https://en.wikipedia.org/wiki/International_System_of_Units) units. To 'pre-define' a different unit system, do one of the following:
-- Make an assignment: `UnitSystem='UnitSystemCode';`, where `UnitSystemCode` refers to the unit system to be used. See the list of unit system codes below.
+- Make a variable assignment: `UnitSystem='UnitSystemCode';`, where `UnitSystemCode` refers to the unit system to be used. See the list of unit system codes below.
 - Define an anonymous function: `UnitSystem=@()'UnitSystemCode';`.
-- Create a function named `UnitSystem` in the current working directory or elsewhere. The function takes no input arguments and return a string specifying the unit system code.
+- Create a function named `UnitSystem` in the current working directory or elsewhere. The function takes no input arguments and returns a string specifying the unit system code.
 
 `v=Constant.UnitSystemCode.NameOfConstant` returns the value of the named constant in the specified unit system, regardless of the predefined unit system. For examples:
 - `v=Constant.SI.ElementaryCharge` returns the value of the elementary charge, *e*, in the SI units (=1.602176565);
