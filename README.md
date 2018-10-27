@@ -4,6 +4,9 @@ A collection of fundamental physical constants in various unit systems for MATLA
 ## Licensing
 This software is licensed under the GNU General Public License (version 3).
 
+## Tested On
+- MATLAB R2013b - R2018a
+
 ## Syntax
 `v=Constant.NameOfConstant` returns the value of the named constant in the default unit system. See the [list of physical constant names](https://github.com/heriantolim/PhysConst#list-of-physical-constant-names). For examples:
 - `v=Constant.ElementaryCharge` returns the value of the elementary charge, *e*;
